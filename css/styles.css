@@ -209,21 +209,28 @@ h3 {
 
 /* Sobre Nosotros - Iconos (Grid) */
 
-.sobrenosotros__iconos {
+.bloques {
   display: grid;
   grid-template-columns: repeat( 2 , 1fr );
+  text-align: center;
+  gap: 2rem;
   }
-  
-.sobrenosotros__icono {
+
+.bloque {
   width: auto;
+  padding: 2rem;
 }
 
 @media (min-width: 768px) {
-.sobrenosotros__iconos {
+.bloques {
   grid-template-columns: repeat( 4, 1fr );
   }
 
-.sobrenosotros__icono {
+.bloque {
   width: auto;
   }
+}
+
+.bloque__titulo {
+    margin-bottom: 0;
 }
