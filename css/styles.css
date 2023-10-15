@@ -176,12 +176,13 @@ h3 {
     }
 }
 
-/* Sobre Nosotros */
+/* Sobre Nosotros - Flex */
 
 .sobrenosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
 }
 
 .sobrenosotros__texto {
@@ -190,14 +191,17 @@ h3 {
 
 .sobrenosotros__imagen {
     background-image: url(../img/nosotros.jpg);
-    height: 35rem;
-    width: 100%%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30rem;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
 .sobrenosotros {
   flex-direction: row;
   justify-content: space-between;
+  padding: 2rem;
   }
 
 .sobrenosotros__texto,
@@ -206,10 +210,11 @@ h3 {
   }
 }
 
+/* Sobre Nosotros - Iconos (Grid) */
+
 .sobrenosotros__iconos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat( 2 , 1fr );
   }
   
 .sobrenosotros__icono {
@@ -218,8 +223,7 @@ h3 {
 
 @media (min-width: 768px) {
 .sobrenosotros__iconos {
-  flex-direction: row;
-  align-items: space-around;
+  grid-template-columns: repeat( 4, 1fr );
   }
 
 .sobrenosotros__icono {
