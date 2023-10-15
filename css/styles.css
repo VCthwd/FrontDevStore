@@ -180,18 +180,48 @@ h3 {
 
 .sobrenosotros {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sobrenosotros__texto {
-  width: 50%;
+  width: 100%;
 }
 
 .sobrenosotros__imagen {
     background-image: url(../img/nosotros.jpg);
-    width: 50%%;
+    height: 35rem;
+    width: 100%%;
+}
+
+@media (min-width: 768px) {
+.sobrenosotros {
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+.sobrenosotros__texto,
+.sobrenosotros__imagen {
+  width: 50%
+  }
 }
 
 .sobrenosotros__iconos {
+  flex-direction: column;
+  align-items: center;
+  }
+  
+.sobrenosotros__icono {
+  width: auto;
+}
 
+@media (min-width: 768px) {
+.sobrenosotros__iconos {
+  display: flex;
+  justify-content: space-around;
+  }
+
+.sobrenosotros__icono {
+  width: 200px;
+  }
 }
