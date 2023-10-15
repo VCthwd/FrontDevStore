@@ -218,6 +218,7 @@ h3 {
 @media (min-width: 768px) {
 .sobrenosotros__iconos {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   }
 
