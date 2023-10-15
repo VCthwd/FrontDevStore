@@ -179,18 +179,19 @@ h3 {
 /* Sobre Nosotros */
 
 .sobrenosotros {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .sobrenosotros__texto {
-
+  width: 50%;
 }
 
 .sobrenosotros__imagen {
     background-image: url(../img/nosotros.jpg);
-    width: 100%;
+    width: 50%%;
 }
 
-.sobrenosotros__icono {
+.sobrenosotros__iconos {
 
 }
