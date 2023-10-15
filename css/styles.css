@@ -209,7 +209,7 @@ h3 {
 .sobrenosotros__iconos {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   }
   
 .sobrenosotros__icono {
@@ -219,7 +219,7 @@ h3 {
 @media (min-width: 768px) {
 .sobrenosotros__iconos {
   flex-direction: row;
-  justify-content: space-around;
+  align-items: space-around;
   }
 
 .sobrenosotros__icono {
